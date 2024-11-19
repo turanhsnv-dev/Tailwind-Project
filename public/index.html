@@ -3,10 +3,408 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- GOOGLE FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@400;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FONT AWESOME CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
 
-  <body>
-    <h1 class="text-3xl font-bold">Hello world!</h1>
+  <body class="font-open">
+    <!-- HEADER SECTION -->
+    <header class="bg-black py-6 lg:py-12 text-gega-grey uppercase">
+      <div
+        class="container mx-auto flex items-center justify-between space-x-8 lg:space-x-16"
+      >
+        <!-- LOGO -->
+        <a
+          href="#"
+          class="pl-4 md:pl-0 text-4xl lg:text-6xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-red-500 to-gray-100"
+          >GEGA</a
+        >
+
+        <!-- MOBILE MENU -->
+        <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-gray-400 w-8 h-1 rounded-full"></div>
+            <div class="bg-gray-400 w-8 h-1 rounded-full"></div>
+            <div class="bg-gray-400 w-8 h-1 rounded-full"></div>
+          </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="hidden md:flex justify-between flex-1">
+          <!-- MENU -->
+          <div class="flex items-center lg:text-lg space-x-4 lg:space-x-8">
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >movies</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >celebrites</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >blog</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >news</a
+            >
+            <a href="#" class="hover:text-gega-melon transition duration-500"
+              >about</a
+            >
+          </div>
+
+          <!-- LOGIN AREA -->
+          <div class="flex items-center space-x-4 lg:space-x-8">
+            <!-- SEARCH -->
+            <form>
+              <div class="border-r px-4 mx-4 py-1 border-gray-500 group">
+                <input
+                  type="text"
+                  class="bg-transparent border-b opacity-0 group-hover:opacity-100 border-gray-500 focus:outline-none w-24 lg:w-44 px-1 transition duration-500"
+                />
+                <button class="-ml-4 group-hover:ml-0 transition duration-500">
+                  <i
+                    class="fas fa-search group-hover:text-red-500 transition duration-500"
+                  ></i>
+                </button>
+              </div>
+            </form>
+
+            <!-- SIGN UP -->
+            <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+              <a href="#">Login</a>
+              <a
+                href="#"
+                class="bg-red-500 px-3 py-1 hover:bg-rose-700 cursor-pointer transition duration-500 whitespace-nowrap"
+                >Sign Up</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="h-96 lg:h-128 group relative">
+      <!-- HERO IMG -->
+      <img
+        src="./images/batman.jpg"
+        alt="Main Image"
+        class="h-full w-full object-cover"
+      />
+
+      <!-- Hero Content -->
+      <div
+        class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black"
+      >
+        <!-- Hero Content Container -->
+        <div class="container pl-10 lg:pl-0">
+          <h3
+            class="text-gega-melon tracking-wider group-hover:mb-1 duration-500"
+          >
+            Action, Drama, THriller
+          </h3>
+          <h1
+            class="text-4xl lg:text-6xl text-gega-grey group-hover:mb-1 duration-500"
+          >
+            The Dark Knight
+          </h1>
+          <p
+            class="text-gega-grey group-hover:mb-2 duration-500 w-3/4 lg:w-2/3 text-sm lg:text-base"
+          >
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequatur, odit unde itaque accusamus in magni quidem neque,
+            placeat, perspiciatis ratione sapiente minus molestias ut quam quia.
+            Modi quisquam veritatis excepturi reiciendis sequi error pariatur
+            autem!
+          </p>
+
+          <!-- Detail Container -->
+          <div
+            class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-20 lg:group-hover:mb-20 duration-1000"
+          >
+            <!-- Watch -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="#"
+                class="text-gega-grey uppercase lg:text-lg hover:text-red-600 duration-500"
+                >Watch Trailer
+              </a>
+              <div
+                class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-red-500 text-gega-grey"
+              >
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+
+            <!-- Info -->
+            <div class="flex space-x-2 items-center cursor-pointer">
+              <a
+                href="#"
+                class="text-gega-grey uppercase lg:text-lg hover:text-red-600 duration-500"
+                >Full Synopsis
+              </a>
+              <div
+                class="flex h-8 w-8 rounded-full text-center items-center justify-center bg-red-500 text-gega-grey"
+              >
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- POINTS -->
+      <div
+        class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000"
+      >
+        <div class="h-3 w-3 lg:h-4 lg:w-4 rounded-full bg-gega-melon"></div>
+        <div class="h-3 w-3 lg:h-4 lg:w-4 rounded-full bg-gega-grey"></div>
+        <div class="h-3 w-3 lg:h-4 lg:w-4 rounded-full bg-gega-grey"></div>
+        <div class="h-3 w-3 lg:h-4 lg:w-4 rounded-full bg-gega-grey"></div>
+      </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="py-24 bg-black">
+      <!-- Movies Content -->
+      <div class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-8">
+        <!-- Left Content -->
+        <div class="basis-2/3">
+          <!-- Titles -->
+          <div
+            class="flex space-x-2 divide-x divide-gega-melon divide-opacity-50 mb-8 pl-10 lg:pl-0"
+          >
+            <h2 class="text-gega-grey"><a href="#">Latest</a></h2>
+            <h2 class="text-gega-white pl-2 hover:text-gega-melon duration-500">
+              <a href="#">Popular</a>
+            </h2>
+            <h2 class="text-gega-white pl-2 hover:text-gega-melon duration-500">
+              <a href="#">Best</a>
+            </h2>
+          </div>
+
+          <!-- Images Container -->
+
+          <div class="flex flex-wrap">
+            <!-- ImAGE 1 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/action-mistery-movie-poster-design-template-2ec690d65c22aa12e437d765dbf7e4af_screen.jpg?ts=1680854635" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 2 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://athenaposters.ca/wp-content/uploads/2019/12/PE160723-Lord-of-the-Rings-Movie-Poster.jpg" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 3 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2015%2F06%2Fhollywood-movie-posters-redesigned-6.jpg?q=75&w=800&cbr=1&fit=max" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 4 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://creativereview.imgix.net/content/uploads/2023/12/Oppenheimer.jpg?auto=compress,format&q=60&w=1263&h=2000" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 5 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/2909126/5966764/MOVAB14245__28808.1679608897.jpg?c=2" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 6 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3">
+              <img src="https://m.media-amazon.com/images/I/91Md1ADSWjL.jpg" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 7 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+              <img src="https://athenaposters.ca/wp-content/uploads/2019/12/PE160723-Lord-of-the-Rings-Movie-Poster.jpg" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+            <!-- ImAGE 8 -->
+            <div class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden">
+              <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2015%2F06%2Fhollywood-movie-posters-redesigned-6.jpg?q=75&w=800&cbr=1&fit=max" class="group-hover:scale-110 group-hover:opacity-20 duration-500" alt=""/>
+              <!-- Image Details -->
+               <div class="absolute px-6 bottom-8">
+                <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">Fight Club</h3>
+                <p class="text-s opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 group-hover:text-gega-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, rem.</p>
+                <!-- Icons container -->
+                 <div class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-play"></i></a>
+                  <a class="hover:text-gega-melon" href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <Right Content  -->
+        <div class="basis-1/3 pl-10 lg:pl-0">
+          <!-- Right Title -->
+           <h2 class="text-gega-grey mb-8">Hot Nwes</h2>
+
+           <!-- New Container -->
+            <div class="flex flex-row lg:flex-col lg:h-full lg:pb-20 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+              <!-- News Item -->
+               <div class="flex items-center group basis-3/4 md:basis-1/2">
+                <!-- news image -->
+                 <div class="basis-1/3 h-full">
+                    <img class="h-full w-full object-cover" src="https://github.com/ArinSoftware/gega-project/blob/main/public/images/new1.jpg?raw=true" alt="">
+                 </div>
+                 <!-- item details -->
+                  <div class="pl-6 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut!</p>
+                    <p class="text-sm tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2024</p>
+                  </div>
+               </div>
+               <div class="flex items-center group basis-3/4 md:basis-1/2">
+                <!-- news image -->
+                 <div class="basis-1/3 h-full">
+                    <img class="h-full w-full object-cover" src="https://github.com/ArinSoftware/gega-project/blob/main/public/images/new1.jpg?raw=true" alt="">
+                 </div>
+                 <!-- item details -->
+                  <div class="pl-6 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ut!</p>
+                    <p class="text-sm tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2024</p>
+                  </div>
+               </div>
+               <div class="flex items-center group basis-3/4 md:basis-1/2">
+                <!-- news image -->
+                 <div class="basis-1/3 h-full">
+                    <img class="h-full w-full object-cover" src="https://github.com/ArinSoftware/gega-project/blob/main/public/images/new1.jpg?raw=true" alt="">
+                 </div>
+                 <!-- item details -->
+                  <div class="pl-6 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                    <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, autem</p>
+                    <p class="text-sm tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2024</p>
+                  </div>
+               </div>
+               <div class="flex items-center group basis-3/4 md:basis-1/2">
+                <!-- news image -->
+                 <div class="basis-1/3 h-full">
+                    <img class="h-full w-full object-cover" src="https://github.com/ArinSoftware/gega-project/blob/main/public/images/new1.jpg?raw=true" alt="">
+                 </div>
+                 <!-- item details -->
+                  <div class="pl-6 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                    <p class="text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis, autem.</p>
+                    <p class="text-sm tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2024</p>
+                  </div>
+               </div>
+               <div class="flex items-center group basis-3/4 md:basis-1/2 md:hidden lg:flex">
+                <!-- news image -->
+                 <div class="basis-1/3 h-full">
+                    <img class="h-full w-full object-cover" src="https://github.com/ArinSoftware/gega-project/blob/main/public/images/new1.jpg?raw=true" alt="">
+                 </div>
+                 <!-- item details -->
+                  <div class="pl-6 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                    <p class="text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, rem?</p>
+                    <p class="text-sm tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2024</p>
+                  </div>
+               </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Matrix Section -->
+     <section class="bg-gega-white mb-24">
+      <!-- Matrix Container -->
+       <div class="container flex items-center justify-center relative pl-10 lg:pl-0">
+         <!-- Left Content -->
+          <div class="hidden md:block md:basis-1/3 lg:basis-1/2">
+            <img class="lg:absolute lg:bottom-0" src="https://github.com/ArinSoftware/gega-project/blob/main/public/images/matrix.png?raw=true" alt="">
+          </div>
+
+          <!-- Right Content -->
+           <div class="md:basis-2/3 lg:basis-1/2">
+            <div class="flex flex-col justify-center py-10 w-3/4 md:w-full">
+              <h3 class="tracking-wider text-gega-melon">Action, Drama, Thriller</h3>
+              <h2 class="mb-2">Matrix Reloaded</h2>
+              <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. In officiis veniam repellendus debitis. In ex mollitia, et id asperiores velit!</p>
+              <h3 class="tracking-wider text-red-600">8 wins, 34 moninations</h3>
+            </div>
+           </div>
+
+           <!-- Oldie -->
+            <div class="absolute -top-10 lg:-top-12 left-10 lg:left-0 w-16 h-16 md:w-24 md:h-24 bg-gega-melon rounded-full text-center flex items-center">
+              <p class="font-gemunu uppercase font-bold text-sm lg:text-xl text-red-600 -rotate-45">Oldie & Goldie</p>
+            </div>
+       </div>
+     </section>
   </body>
 </html>
